@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Sprite Club</title>
+    <link rel="stylesheet" type="text/css" href="spriteclub.css">
+<script src="spriteclub.js"></script>  
+<!--Links that were imported in codepen but I didn't realize it and now I'm importing them-->
+
+<script src=https://code.createjs.com/easeljs-0.8.1.min.js></script>
+<script src=https://code.createjs.com/preloadjs-0.6.1.min.js></script>
+<script src=https://code.createjs.com/tweenjs-0.6.2.min.js></script>
+    <center><img src="https://res.cloudinary.com/tararee/image/upload/r_0/v1468205210/soapdrop_nfepxh.png" style="width:500px"></center>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+    </style>
+  </head>
+  
+  <body onload="init();" tabindex="0">
+    <!--For Easel.js-->
+    <div id='title' class='flexRow'>
+      <h1 class="insetShadow"><h1>
+
+    </div>
+        <!--Content area-->
+        <div 
+    <div class="flexRow">
+      <div class="statsLeft">
+        <h3>Tyler</h3>
+        <p id="tyler_hp">HP 30</p>
+        <p id="tyler_stats"></p>
+      </div>
+    <div>
+        <canvas id = "testCanvas" width="640" height="250"></canvas>
+    </div>
+      <div class="statsRight">
+        <h3>Enemy1</h3>
+        <p id="enemy1_hp">HP 30</p>
+        <p id="enemy1_stats"></p>
+        
+      </div>
+    </div>
+        <!--Instructions-->
+     <div class="center getFocus">
+       <div class="btn" onclick="document.body.style.background = '#222'; getElementById('getFocus').style.display = 'none'; getElementById('title').style.display = 'none';"><h2 id="getFocus">Start</h2></div>
+       <p>W A S D or Arrow Keys to move || <b>Spacebar</b> to attack</p>
+      
+       
+    </div>
+
+    <script type="text/javascript" src="spriteclub.js"></script>
+
+  </body>
+    
+  
+  
+</html>
